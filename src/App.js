@@ -58,7 +58,12 @@ function App() {
           <button className={styles.btn} onClick={ResultHandler} ><AiOutlineAudit className={styles.icon} />View Result </button>
           : <span >wait...</span>}
       </div>
-
+      {accessCode?
+      <div className={styles.accessCode}>
+        <h2>Access Code :</h2> 
+        <span>{accessCode}</span>
+      </div>
+       :""}
       <div className={styles.instruction}>
         <div className={styles.instr_head}>
           <FcGraduationCap className={styles.icon} />
