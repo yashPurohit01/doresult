@@ -250,9 +250,22 @@
   .App{
 
     & .mainSection{
-      
+      & .col_1{
+        display: flex;
+        justify-content: flex-start;
+        & .mainhead{
+          display: flex;
+          align-items: flex-start;
+          padding: 0.6rem;
+          border:  1px solid red;
+          & h2 {
+            text-align: flex-start;
+          }
+
+        }
+      }
       & h2{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
 
       }
       & .maininputSection{
