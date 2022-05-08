@@ -75,20 +75,20 @@ function App() {
           <div className={styles.imgContainer}>
 
             <p className={styles.instruction}>1. Go to email, Copy the assisment link. </p>
-            <img src="/img/instruction_1.png" width="350" alt="inst" />
+            <img src="/img/instruction_1.png" width="360" alt="inst" />
           </div>
 
           <div className={styles.imgContainer}>
             <p className={styles.instruction}>2. Paste the link and Click on submit. </p>
 
-            <img src="/img/instruction_2.png" width="350" alt="inst" />
+            <img src="/img/instruction_2.png" width="360" alt="inst" />
           </div>
 
 
           <div className={styles.imgContainer}>
 
             <p className={styles.instruction}>3. Click on View Result. </p>
-            <img src="/img/instruction_3.png" width="350" alt="inst" />
+            <img src="/img/instruction_3.png" width="360" alt="inst" />
           </div>
 
         </div>

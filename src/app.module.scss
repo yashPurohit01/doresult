@@ -141,10 +141,11 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
-        gap: 0.5rem;
+        gap: 1rem;
         padding: 12px;
       & .imgContainer{
-        width: 400px;
+        width: 360px;
+      
         & .instruction{
             background-color: $main_col;
             color: white;
