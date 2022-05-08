@@ -11,9 +11,7 @@
     box-sizing: border-box;
   }
   & .headersection{
-    
-      
-    
+
     background-color: $main_col;
     display: flex;
     color: white;
@@ -82,6 +80,7 @@
         flex-wrap: wrap;
         align-items: center;
         height: min-content;
+        gap: 0.5rem;
       & .input{
         padding:0.7rem;
         width: 80%;
@@ -143,6 +142,7 @@
       flex-wrap: wrap;
       justify-content: center;
         gap: 0.5rem;
+        padding: 12px;
       & .imgContainer{
         width: 400px;
         & .instruction{
@@ -180,14 +180,17 @@
      }
   }
   & .accessCode{
-    width: 100%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    box-sizing: border-box;
   & span{
     font-size: 0.8rem;
     font-weight: 600;
+    width: 20rem;
+    
   }
   & .icon{
     font-size: 1.2rem;
@@ -239,5 +242,27 @@
         margin: 0;
         }
       }
+  }
+}
+
+
+@media screen and (max-width :450px) {
+  .App{
+
+    & .mainSection{
+      
+      & h2{
+        font-size: 1.2rem;
+
+      }
+      & .maininputSection{
+        width: 85%;
+        & .inputContainer{
+        & .input{
+          width: 100%;
+        }
+      }
+      }
+    }
   }
 }
