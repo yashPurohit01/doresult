@@ -88,7 +88,7 @@
         border: 2px solid rgba(79, 78, 78, 0.907);
         border-radius: 4px;
         &::placeholder{
-          font-size: 1.1rem;
+          font-size: 1rem;
           font-weight: 500;
         }
         &:focus{
@@ -181,22 +181,33 @@
      }
   }
   & .accessCode{
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    
     box-sizing: border-box;
-  & span{
+    & .code{
+      width: 15rem;
+      display: flex;
+      flex-direction: column;
+
+    gap: 10px;
+  & .textarea{
     font-size: 0.8rem;
     font-weight: 600;
-    width: 20rem;
+    width: 13rem;
+    padding: 1rem;
+    border: 1px solid $main_col;
+    outline: none;
+    
     
   }
   & .icon{
     font-size: 1.2rem;
     padding: 0.5rem;
   }
+}
  }
   & .notice{
     width: 100%;

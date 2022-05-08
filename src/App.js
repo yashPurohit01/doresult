@@ -41,7 +41,7 @@ function App() {
         <div className={styles.maininputSection}>
           <h2><ImPaste /> Paste Your Assisement Link here</h2>
           <div className={styles.inputContainer}>
-            <input className={styles.input} type="text" onChange={(e) => setValue(e.target.value)} placeholder="enter your acess code" />
+            <input className={styles.input} type="text" onChange={(e) => setValue(e.target.value)} placeholder="paste your assisment link here" />
             <button className={styles.btn} onClick={SubmitHandler}>Submit</button>
 
           </div>
@@ -60,8 +60,10 @@ function App() {
       </div>
       {accessCode?
       <div className={styles.accessCode}>
+        <div className={styles.code}>
         <h2>Access Code :</h2> 
-        <span>{accessCode}</span>
+        <textarea type="text" className={styles.textarea} value={accessCode}/>
+        </div>
       </div>
        :""}
       <div className={styles.instruction}>
