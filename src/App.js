@@ -3,7 +3,7 @@ import styles from './app.module.scss';
 import { IoNewspaperOutline } from 'react-icons/io5';
 import { AiOutlineAudit } from 'react-icons/ai'
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
-import { FcGraduationCap, FcInternal, FcLike, FcHighPriority, FcOk } from 'react-icons/fc';
+import { FcGraduationCap, FcInternal, FcLike, FcHighPriority, FcOk, FcLink } from 'react-icons/fc';
 import { ImPaste } from 'react-icons/im';
 
 
@@ -25,7 +25,19 @@ function App() {
     <section className={styles.App}>
       <div className={styles.headersection}>
         <h1>d<FcOk />result</h1>
+        <div className={styles.headprofile}>
+          <div className={styles.checkout}>
+            <FcLink className={styles.icon} />
+            <p>check out  </p>
+          </div>
+
+
+          <a href='https://www.linkedin.com/in/yash-purohit-a135321b1/'>Yash Purohit</a>
+
+        </div>
+
       </div>
+
       <div className={styles.mainSection}>
 
         <div className={styles.col_1}>
@@ -39,9 +51,9 @@ function App() {
         </div>
 
         <div className={styles.maininputSection}>
-          <h2><ImPaste /> Paste Your Assisement Link here</h2>
+          <h2><ImPaste /> Paste Your Assessment Link here</h2>
           <div className={styles.inputContainer}>
-            <input className={styles.input} type="text" onChange={(e) => setValue(e.target.value)} placeholder="paste your assisment link here" />
+            <input className={styles.input} type="text" onChange={(e) => setValue(e.target.value)} placeholder="paste your assessment link here" />
             <button className={styles.btn} onClick={SubmitHandler}>Submit</button>
 
           </div>
@@ -58,14 +70,14 @@ function App() {
           <button className={styles.btn} onClick={ResultHandler} ><AiOutlineAudit className={styles.icon} />View Result </button>
           : <span >wait...</span>}
       </div>
-      {accessCode?
-      <div className={styles.accessCode}>
-        <div className={styles.code}>
-        <h2>Access Code :</h2> 
-        <textarea type="text" className={styles.textarea} value={accessCode}/>
+      {accessCode ?
+        <div className={styles.accessCode}>
+          <div className={styles.code}>
+            <h2>Access Code :</h2>
+            <textarea type="text" className={styles.textarea} value={accessCode} />
+          </div>
         </div>
-      </div>
-       :""}
+        : ""}
       <div className={styles.instruction}>
         <div className={styles.instr_head}>
           <FcGraduationCap className={styles.icon} />
@@ -97,7 +109,7 @@ function App() {
       </div>
       <div className={styles.notice}>
         <FcHighPriority className={styles.icon} />
-        <p>doResult is Created for eductional purpose only. Application maybe terminated if requried.</p>
+        <p>DoResult is built for educational purpose. Application maybe terminated if requried.</p>
       </div>
       <div className={styles.footersection}>
         <div className={styles.head_1}>
